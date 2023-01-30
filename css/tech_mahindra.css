@@ -1,0 +1,48 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+#logo{
+	width: 12%;
+}
+nav #logo img{
+	width:  53%;
+}
+#menu{
+	width: 63%;
+	margin: 2% 0%;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+	font-size: 1.3em;
+
+}
+#menu a{
+	text-decoration: none;
+	color: black;
+}
+#menu div:hover{
+	color: #7841E8;
+	cursor: pointer;
+}
+#interview-pattern_div{
+	margin: 4%;
+}
+#heading{
+	margin-bottom: 2%;
+}
+ul{
+	    margin-left: 3%;
+}
+#round_details{
+
+    margin-top: 2%;
+
+}
+.interview_round_details{
+	margin-bottom: 2%;
+}

@@ -1,0 +1,176 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+#logo{
+	width: 12%;
+}
+nav #logo img{
+	width:  53%;
+}
+#menu{
+	width: 63%;
+	margin: 2% 0%;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+	font-size: 1.3em;
+
+}
+#menu a{
+	text-decoration: none;
+	color: black;
+}
+#menu div:hover{
+	color: #7841E8;
+	cursor: pointer;
+}
+#body{
+	background-color: #ffffff;
+}
+#hero_div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2%;
+
+}
+#hero_text{
+	font-size: 60px;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0% 4%;
+}
+#wrapper{
+	display: flex;
+}
+#wrapper .dynamic_txt{
+	margin-left: 15px;
+    height: 37px;
+    line-height: 37px;
+    overflow: hidden;
+}
+.static_txt{
+	font-size: 30px;
+}
+.dynamic_txt li{
+	font-size: 30px;
+	list-style: none;
+	position: relative;
+	top: 0;
+	position: relative;
+	animation: slide 15s steps(5) infinite;
+	color:#5a17e3;
+}
+.dynamic_txt li::after{
+	content: " ";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-left: 2px solid #5a17e3;
+	animation: typing 3s steps(15) infinite;
+	background-color: white;
+}
+#start_learning_btn{
+	padding: 1.5%;
+	width: 40%;
+	margin: 4% 2%;
+	background-color: white;
+	border: 2px solid black;
+	font-size: 20px;
+}
+#start_learning_btn:hover{
+	background-color: #845adb;
+	color: white;
+	/*opacity: .5;*/
+	border: 2px solid #845adb;
+}
+#hero_illustration{
+	width: 90%;
+	height: 80%;
+	margin: 2%;
+}
+#resources_div{
+	background-color: #5a17e3;
+	height: 40%;
+	
+}
+#resources_slides_div{
+	display: flex;
+}
+#resources_div_heading p{
+	text-align: center;
+	font-size: 40px;
+	font-family: sans-serif;
+	padding: 2% 2% 1% 2%;
+	color: white;	
+}
+.slide{
+	width: 40%;
+	border: 1px solid black;
+	margin: 4%;
+	/*text-align: center;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 200px;
+}
+.slide:hover{
+	opacity: 0.5;
+}
+.slide a{
+	text-align: center;
+}
+.slide a img{
+	width: 25%;
+}
+.slide p{
+	font-size: 23px;
+	color: white;
+}
+.slide i{
+	color: white;
+	font-size: 55px;
+}
+#roadmaps_div{
+	background-color: white;
+}
+#roadmaps_slides_div{
+	margin: 0 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#resources_slides_div_main_text{
+	font-size: 50px;
+	font-family: sans-serif;
+	text-align: left;
+	margin: auto 0% auto 5%;
+}
+#resources_slides_div_slides{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#roadmaps_slides_div .slide{
+	width: 90%;
+}
+@keyframes slide{
+	100%{
+		top:-184px;
+
+	}
+}
+@keyframes typing{
+	40%,60%{
+		left: calc(100%);
+	}
+	100%{
+		left: 0;
+	}
+}

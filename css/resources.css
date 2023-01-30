@@ -1,0 +1,104 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+#logo{
+	width: 12%;
+}
+nav #logo img{
+	width:  53%;
+}
+#menu{
+	width: 63%;
+	margin: 2% 0%;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+	font-size: 1.3em;
+
+}
+#menu a{
+	text-decoration: none;
+	color: black;
+}
+#menu div:hover{
+	color: #7841E8;
+	cursor: pointer;
+}
+#body{
+	background-color: #ffffff;
+}
+#lang-div{
+	margin: 5%;
+}
+#title{
+	/*not working*/
+	/*font-style: Roboto;*/
+	font-size: 2em;
+	font-weight: 700;
+	display: block;
+	padding: 0.5% 1% 0.5% 1%;
+
+}
+
+#lang-tutorials{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 7%;
+	grid-row-gap: 18%;
+	margin: 0.5%;
+}
+.lang-tutorial{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+	height: 100%;
+	background-color: #4B8BBE;
+	box-shadow: 5px 7px #888888;
+}
+.lang-tutorial a{
+	text-decoration: none;
+	color: black;
+}
+.lang-tutorial img{
+	
+}
+.lang-tutorial i{
+	padding: 10% 0%;
+	width: 30%;
+    height: 30%;
+    font-size: 400%;
+    color: #ffffff;
+}
+.lang-tutorial:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+#lang-tutorial-desc{
+	text-decoration: none;
+    color: white;
+	font-weight: 700;
+	font-size: 1.6em;
+    padding-top: 18%;
+}
+#lang-tutorial-java{
+	background-color: #F89820;
+	color: white;
+}
+#lang-tutorial-javascript{
+	background-color: #FBDA37;
+	color: white;
+}
+#lang-tutorial-c{
+	background-color: #ffffff;
+	color: #004482;
+}
+#lang-tutorial-cplusplus{
+	background-color: #004481;
+	color: white;
+}

@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+#logo{
+	width: 12%;
+}
+nav #logo img{
+	width:  53%;
+}
+#menu{
+	width: 63%;
+	margin: 2% 0%;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+	font-size: 1.3em;
+}
+#menu div:hover{
+	color: #7841E8;
+	cursor: pointer;
+}
+#main_div{
+	margin: 2% 7%;
+	display: grid;
+	grid-template-columns: auto auto ;
+
+}
+/*#paid_resources h1{
+	margin: 1%;
+}*/
+.resource_div{
+	width: 90%;
+}
+.resource_title{
+	margin: 2% 2% 1% 0%;
+}
+.resource_desc{
+	width: 70%;
+	font-size: 1.1em;
+}
+.resource_div img{
+	width: 60%;
+	height: 50%;
+}
